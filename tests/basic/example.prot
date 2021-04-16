@@ -1,0 +1,11 @@
+protocol ExampleProt "Example protocol"
+
+align 32
+
+field testfield BF 8 "Example testfield with length 8"
+field field2   BF 24 "long bf"
+block payload {
+    field channel   uint 16 "channel num"
+    field adc       int 32 "adc"
+}
+
